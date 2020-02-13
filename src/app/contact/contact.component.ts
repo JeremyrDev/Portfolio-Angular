@@ -2,6 +2,8 @@ import { Component, SecurityContext } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { DataService } from '../data.service';
 
+import * as $ from 'jquery';
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',

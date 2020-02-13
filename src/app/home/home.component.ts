@@ -1,6 +1,8 @@
 import { Component, OnInit, HostListener, ViewEncapsulation } from '@angular/core';
 import { DataService } from '../data.service';
 
+import * as $ from 'jquery';
+
 @Component({
      selector: 'app-home',
      templateUrl: './home.component.html',
@@ -35,7 +37,7 @@ export class HomeComponent implements OnInit {
           window.addEventListener('scroll', this.scroll, true);
 
           $(function () {
-               $('[data-toggle="popover"]').popover({
+               ($('[data-toggle="popover"]') as any).popover({
                     html: true
                })
           })
@@ -132,6 +134,6 @@ export class HomeComponent implements OnInit {
 
      leavePopover()
      {
-          $('#discord').popover('hide');
+          ($('#discord') as any).popover('hide');
      }
 }
