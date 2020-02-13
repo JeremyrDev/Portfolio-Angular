@@ -1,0 +1,59 @@
+<div class="container-custom">
+     <div class="header">
+          <nav class="navbar navbar-expand-lg navbar-light">
+               <a class="navbar-brand" href="">
+                    <h1 class="logo">JR</h1>
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto"></ul>
+
+                    <form class="form-inline my-2 my-lg-0">
+                         <ul class="navbar-nav mr-auto">
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#skills">Skills<span class="sr-only">(current)</span></a>
+                              </li>
+
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#work">Work</a>
+                              </li>
+
+                              <!-- <li class="nav-item">
+                                   <a class="nav-link" href="#projects">Projects</a>
+                              </li> -->
+
+                              <li class="nav-item">
+                                   <a class="nav-link" routerLink="contact">Contact</a>
+                              </li>
+
+                              <li class="nav-item">
+                                   <a class="nav-link loop" href="#start-a-project">Start a Project</a>
+                              </li>
+                         </ul>
+                    </form>
+
+               </div>
+          </nav>
+
+          <div class="content" [ngClass]="headerContentFade ? 'fade':''">
+               <h1 class="text-center">Thanks for taking the time to look around. <br> My page on Baseline is coming soon!</h1>
+
+               <div class="header-image">
+                    <img src="assets/profile.png" alt="">
+               </div>
+
+               <div class="social-icons col-12">
+                    <div class="col-3 icon"><a href="https://angel.co/jeremy-ryan-6"><i class="fab fa-angellist"></i></a></div>
+                    <div class="col-3 icon"><a href="https://github.com/JeremyrDev"><i class="fab fa-github"></i></a></div>
+                    <div class="col-3 icon"><a href="https://www.linkedin.com/in/michael-jeremy-ryan"><i class="fab fa-linkedin-in"
+                                   style="padding-top: 5px; padding-left: 2px;"></i></a>
+                    </div>
+                    <div class="col-3 icon"><a href="mailto:Jeremyr.dev@gmail.com"><i class="far fa-envelope"></i></a></div>
+               </div>
+          </div>
+     </div>
+</div>

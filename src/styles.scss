@@ -1,0 +1,55 @@
+// This is where we put global styles and change variable values
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Nunito:400,700');
+
+$primaryColor: #0090FF; //#27d7a1
+$secondaryColor: #a044dd;
+
+$family-sans-serif: "Nunito", sans-serif;
+
+
+::selection {
+//   background: white; /* WebKit/Blink Browsers */
+//   color: #08C0EF !important;
+}
+
+::-moz-selection {
+//   background: $primaryColor; /* Gecko Browsers */
+//   color: #08C0EF !important;
+}
+
+//Set custom global styles (will be applied to whole app)
+html{
+     // background: linear-gradient(to right top, $secondaryColor, $primaryColor);
+     scroll-behavior: smooth;
+     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+     // overflow-x: auto !important;
+     
+    overflow-x: hidden !important;
+}
+
+html, body{
+     // height: 100%;
+     // overflow: hidden !important;
+     font-family: 'Lato';
+     overflow-x: hidden !important;
+
+     min-width: 590px;
+}
+
+.centered-content
+{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+     padding: 15px; //Keeps content away from edges of the screen
+}
+
+.text-custom
+{
+     color: $primaryColor;
+}
