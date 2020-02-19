@@ -8,10 +8,8 @@ export class WebService {
      readonly ROOT_URL;
 
      constructor(private http: HttpClient) {
-          this.ROOT_URL = 'http://localhost:3002';
-          // this.ROOT_URL = 'http://45.77.221.87:3000';
-          // this.ROOT_URL = 'https://54.89.8.97:3000';
-          // this.ROOT_URL = 'https://www.strmu.xyz';
+          // this.ROOT_URL = 'http://localhost:3002';
+          this.ROOT_URL = 'https://jeremyrdev.xyz';
      }
 
      get(uri: string) {
