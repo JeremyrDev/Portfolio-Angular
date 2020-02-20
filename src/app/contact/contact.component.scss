@@ -124,6 +124,7 @@ nav
                padding-right: 60px; 
                padding-top: 0px;
                padding-bottom: 2px;
+               margin: auto;
           }
           
           .btn-custom:hover
@@ -162,19 +163,46 @@ nav
                opacity: 0;
                transition: opacity .2s ease-in-out;
           }
-          .name-input
-          {
-               
-          }
+     }
+}
 
-          .email-input
+@media screen and (max-width: 590px)
+{
+     .container-custom
+     {
+          width: 95%;
+     }
+     .header
+     {
+          .content
           {
-               
-          }
+               h1
+               {
+                    font-size: 2.2em;
+               }
 
-          .message-input
+               .social-icons
+               {
+                    width: 75%;
+                    margin: auto;
+
+                    .icon
+                    {
+                         height: 35px;
+                         width: 35px;
+
+                         font-size: 1.35em;
+
+                         margin: 15px;
+                         padding-top: 0px;
+                         padding-left: 5px;
+                    }
+               }
+          }
+          .btn-custom
           {
-               
+               font-size: 20px !important;
+               margin-left: -20px !important;
           }
      }
 }

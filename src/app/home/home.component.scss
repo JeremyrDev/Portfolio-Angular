@@ -151,7 +151,6 @@ nav
 
      .top-background
      {
-
           position: absolute;
           top: 0px;
 
@@ -211,7 +210,7 @@ nav
      .skills-table
      {
           width: 100%;
-          position: absolute;
+          position: relative;
           top: 465px;
 
           .table
@@ -859,7 +858,366 @@ nav
      }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 420px)
+{
+     .container-custom
+     {
+          width: 88%;
+     }
+     .header
+     {
+          .content
+          {
+               .social-icons
+               {
+                    width: 100%;
+                    padding-top: 10px;
+               }
+
+               .btn-custom
+               {
+                    margin-top: 15px;
+               }
+          }
+     }
+     .skills-container
+     {
+          height: 3950px !important;
+     }
+
+     .skills
+     {
+          .skills-table
+          {
+               padding-top: 200px !important;
+          }
+     }
+
+     .rate
+     {
+          .rate-content
+          {
+               .stars-container
+               {
+                    width: 95%;
+               }
+          }
+     }
+
+     .footer
+     {
+          .start-project-container
+          {
+               .start-project
+               {
+                    height: 430px !important;
+               }
+          }
+
+          .social-icons
+          {
+               width: 90% !important;
+          }
+     }
+}
+
+@media screen and (max-width: 590px)
+{
+     nav
+     {
+          // height: 500px;
+     }
+
+     .header
+     {
+          .content
+          {
+               h1
+               {
+                    margin-top: 50px;
+               }
+               
+               .social-icons
+               {
+                    width: 80%;
+                    margin: auto;
+
+                    .icon
+                    {
+                         height: 35px;
+                         width: 35px;
+
+                         font-size: 1.35em;
+
+                         margin: 15px;
+                         padding-top: 0px;
+                         padding-left: 5px;
+                    }
+               }
+
+               .btn-custom
+               {
+                    font-size: 20px;
+               }
+          }
+     }
+     .skills-container
+     {
+          height: 3800px;
+     }
+     .skills
+     {
+          height: 3800px;
+
+          .top-background
+          {
+               height: 650px;
+          }
+
+          .bottom-background
+          {
+               top: 460px;
+          }
+
+          .skills-content
+          {
+               top: 120px;
+          }
+
+          .skills-table
+          {
+               padding-top: 150px;
+          }
+     }
+
+     .footer
+     {
+          margin-top: -325px;
+
+          height: 665px;
+          width: 100%;
+          background-color: $primaryColor;
+          color: #D6D6D6;
+          position: relative;
+
+          background: linear-gradient(to bottom, #0090FF, rgb(9, 110, 187));
+
+          .top-background
+          {
+               position: absolute;
+               top: -100px;
+
+               background-color: $primaryColor;
+               transform: skewY(-4deg);
+               height: 500px;
+               width: 120%;
+               z-index: -998;
+          }
+
+          .start-project-container
+          {
+               width: 100%;
+               height: 580px;
+               margin: auto;
+               position: absolute;
+               top: -180px;
+
+               .start-project
+               {
+                    width: 88%;
+                    // height: 400px !important;
+                    margin: auto;
+                    background-color: #00345c;
+                    border-radius: 15px;
+                    color: white;
+                    z-index: 1001;
+
+                    -webkit-box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.16);
+                    -moz-box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.16);
+                    box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.16);
+
+                    .title-holder
+                    {
+                         width: 95%;
+                         margin-top: 20px;
+                         margin-bottom: 20px;
+
+                         .title
+                         {
+                              display: table-cell;
+                              height: 220px;
+                              width: 100%;
+                              vertical-align: middle;
+                              font-family: Eurostile;
+                              font-size: 2.6em;
+                              font-weight: 800;
+                              color: white;
+                         }
+                    }
+
+                    .info
+                    {
+                         display: table-cell;
+                         height: 220px;
+                         vertical-align: middle;
+                         font-family: europa, sans-serif;
+                         font-style: normal;
+                         font-weight: 300;
+                         font-size: 1.6em;
+                         color: white;
+                         margin: auto;
+                    }
+
+                    .btn-holder
+                    {
+                         display: table-cell;
+                         height: 220px;
+                         vertical-align: middle;
+                         padding-top: 75px;
+
+                         .btn-custom
+                         {
+                              font-family: Eurostile;
+                              background-color: transparent;
+                              color: white;
+                              border: 3px solid $primaryColor;
+                              border-radius: 16px;
+                              font-size:  1.8em;
+                              font-weight: bold;
+                              padding-left: 60px;
+                              padding-right: 60px; 
+                              padding-top: 0px;
+                              padding-bottom: 2px;
+                         }
+                         
+                         .btn-custom:hover
+                         {
+                              background-color: $primaryColor;
+                              color: white;
+                         }
+                    }
+               }
+          }
+
+          .logo
+          {
+               padding-top: 100px;
+               font-family: Eurostile;
+               font-size: 50px;
+               font-weight: bold;
+               width: auto;
+               color: white;
+          }
+
+          .closing-text
+          {
+               margin: auto;
+               padding-top: 25px;
+               font-family: Europa;
+               font-size: 24px;
+               font-weight: 300;
+               width: 225px;
+               line-height: 34px;
+               text-align: center;
+               color: #A0C9E9;
+          }
+
+          .social-icons
+          {
+               width: 80% !important;
+               margin: auto;
+               padding-top: 50px;
+
+               z-index: 1000;
+
+               .icon
+               {
+                    display: inline-block;
+
+                    height: 35px;
+                    width: 35px;
+
+                    margin: 15px;
+                    padding-top: 0px;
+                    padding-left: 5px;
+                    
+                    font-size: 1.35em;
+                    color: #67ABE1;
+                    border: 2px solid #67ABE1;
+                    border-radius: 50%;
+                    
+                    cursor: pointer;
+
+                    transition: all .1s ease-in-out;
+
+                    a
+                    {
+                         color: #67ABE1;
+                    }
+
+                    .discord
+                    {
+                         position: absolute;
+                         top: 0;
+                         display: none;
+                    }
+               }
+
+               .icon:hover
+               {
+                    
+                    border: 2px solid white;
+                    color: white;
+
+                    a
+                    {
+                         color: white;
+                    }
+
+                    .discord-container
+                    {
+                         position: relative;
+                         height: 50px;
+
+                         .discord
+                         {
+                              display: contents;
+                              position: absolute;
+                              top: 0;
+                              float: left;
+                              z-index: 1004;
+                              
+                              background-color: white;
+                              height: 50px;
+                              width: 100px;
+                              border-radius: 8px;
+                              padding: 5px;
+                         }
+                    }
+               }
+          }
+
+          .copyright
+          {
+               margin-top: 45px;
+               font-family: Europa;
+               font-weight: 300;
+               font-size: 16px;
+               color: #A0C9E9;
+          }
+
+          .foot-note
+          {
+               margin-top: 25px;
+               font-family: Europa;
+               font-weight: 300;
+               font-size: 14px;
+               color: #A0C9E9;
+          }
+     }
+}
+
+@media screen  and (max-width: 767px) {
      nav
      {
           .navbar-nav    

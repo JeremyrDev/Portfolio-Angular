@@ -34,34 +34,34 @@ export class HomeComponent implements OnInit {
                this.rate(Number(window.localStorage.getItem("rating")) - 1, true);
           }
 
-          window.addEventListener('scroll', this.scroll, true);
+          // window.addEventListener('scroll', this.scroll, true);
 
-          $(function () {
-               ($('[data-toggle="popover"]') as any).popover({
-                    html: true
-               })
-          })
+          // $(function () {
+          //      ($('[data-toggle="popover"]') as any).popover({
+          //           html: true
+          //      })
+          // })
      }
 
      ngOnDestroy() {
-          window.removeEventListener('scroll', this.scroll, true);
+          // window.removeEventListener('scroll', this.scroll, true);
      }
 
      ngAfterViewInit() {
           (document.querySelector('.stars-container') as HTMLElement).style.marginTop = '10px';
      }
 
-     scroll = (event: any): void => {
+     // scroll = (event: any): void => {
 
-          const number = event.srcElement.scrollingElement.scrollTop;
+     //      const number = event.srcElement.scrollingElement.scrollTop;
 
-          if(number >= 550)
-          {
-               this.headerContentFade = true;
-          }
-          else 
-               this.headerContentFade = false;
-     };
+     //      if(number >= 550)
+     //      {
+     //           this.headerContentFade = true;
+     //      }
+     //      else 
+     //           this.headerContentFade = false;
+     // };
 
      hover(index)
      {
@@ -134,6 +134,6 @@ export class HomeComponent implements OnInit {
 
      leavePopover()
      {
-          ($('#discord') as any).popover('hide');
+          // ($('#discord') as any).popover('hide');
      }
 }
