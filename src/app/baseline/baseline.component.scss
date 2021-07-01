@@ -3,8 +3,10 @@ $secondaryColor: #a044dd;
 
 .container-custom
 {
-     width: 80%;
+     width: 100%;
      margin: auto;
+     padding-left: 50px;
+     padding-right: 50px;
 }
 
 nav 
@@ -68,49 +70,6 @@ nav
                }
           }
 
-          .social-icons
-          {
-               width: 460px;
-               margin: auto;
-
-               .icon
-               {
-                    height: 60px;
-                    width: 60px;
-
-                    margin: 23px;
-                    padding-top: 1px;
-                    padding-left: 12px;
-
-                    display: inline-block;
-                    
-                    cursor: pointer;
-
-                    transition: all .2s ease-in-out;
-
-                    text-decoration: none;
-                         color: lighten($primaryColor, 5%);
-                         font-size: 2.2em;
-                         border: 2px solid lighten($primaryColor, 10%);
-                         border-radius: 50%;
-
-                    a
-                    {
-                         color: lighten($primaryColor, 5%);
-                    }
-               }
-
-               .icon:hover
-               {
-                    background-color: lighten($primaryColor, 10%);
-                    
-                    a
-                    {
-                         color: white;
-                    }
-               }
-          }
-
           .btn-custom
           {
                font-family: Eurostile;
@@ -131,36 +90,106 @@ nav
                background-color: lighten($primaryColor, 20%);
                color: white;
           }
+
+          
+     }
+}
+
+.explanation
+{
+     color: white;
+
+     .top-background
+     {
+          position: absolute;
+          top: 500px;
+          left: 0px;
+
+          background-color: $primaryColor;
+          transform: skewY(-5deg);
+          height: 500px;
+          width: 120%;
+          margin-left: -40px;
+          z-index: -998;
+     }
+     .content
+     {
+          max-width: 750px;
+          margin: auto;
+
+          .title
+          {
+               padding-top: 35px;
+               a
+               {
+                    text-decoration: none;
+                    
+                    font-family: Europa;
+                    font-size: 1.75em;
+                    font-weight: bold;
+                    color: white;
+               }
+          }
+          .sub-text
+          {
+               font-family: Europa;
+               font-size: 1.4em;
+               font-weight: 300;
+          }
+     }
+}
+
+.images
+{
+     margin-top: 50px;
+     img
+     {
+          padding: 15px;
+          width: 95%;
+          margin: auto;
      }
 
-     
-
-     .contact
+     .bigImage
      {
-          // margin-top: 25px;
-          transition: margin-top .2s ease-in-out;
+          width: 100% !important;
+     }
+}
 
-          label
+.footer
+{
+     color: white;
+
+     .top-background
+     {
+          position: absolute;
+          top: 1800px;
+          left: 0px;
+
+          background-color: $primaryColor;
+          transform: skewY(-5deg);
+          height: 1700px;
+          width: 120%;
+          margin-left: -40px;
+          z-index: -998;
+     }
+     .content
+     {
+          max-width: 750px;
+          margin: auto;
+
+          .title
+          {
+               padding-top: 35px;
+               font-family: Europa;
+               font-size: 2em;
+               font-weight: bold;
+               color: white;
+          }
+          .sub-text
           {
                font-family: Europa;
+               font-size: 1.4em;
                font-weight: 300;
-               font-size: 1.3em;
-               color: #7c7c7c;
-          }
-
-          input
-          {
-               border-radius: 8px;
-               height: 55px;
-          }
-
-          .response-text
-          {
-               margin-top: 25px;
-               margin-bottom: 25px;
-               font-family: Europa;
-               opacity: 0;
-               transition: opacity .2s ease-in-out;
           }
      }
 }
@@ -169,7 +198,7 @@ nav
 {
      .container-custom
      {
-          width: 95%;
+          // width: 95%;
      }
      .header
      {
@@ -202,6 +231,139 @@ nav
           {
                font-size: 20px !important;
                margin-left: -20px !important;
+          }
+     }
+
+     .explanation
+     {
+          .top-background
+          {
+               height: 1000px;
+          }
+     }
+
+     .footer
+     {
+          .top-background
+          {
+               top: 2350px;
+               height: 2200px;
+          }
+     }
+}
+
+@media screen and (min-width: 591px) and (max-width: 768px)
+{
+     .container-custom
+     {
+          // width: 95%;
+     }
+     .header
+     {
+          .content
+          {
+               h1
+               {
+                    font-size: 2.2em;
+               }
+
+               .social-icons
+               {
+                    width: 75%;
+                    margin: auto;
+
+                    .icon
+                    {
+                         height: 35px;
+                         width: 35px;
+
+                         font-size: 1.35em;
+
+                         margin: 15px;
+                         padding-top: 0px;
+                         padding-left: 5px;
+                    }
+               }
+          }
+          .btn-custom
+          {
+               font-size: 20px !important;
+               margin-left: -20px !important;
+          }
+     }
+
+     .explanation
+     {
+          .top-background
+          {
+               height: 1000px;
+          }
+     }
+
+     .footer
+     {
+          .top-background
+          {
+               top: 2800px;
+               height: 1800px;
+          }
+     }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1280px)
+{
+     .container-custom
+     {
+          // width: 95%;
+     }
+     .header
+     {
+          .content
+          {
+               h1
+               {
+                    font-size: 2.2em;
+               }
+
+               .social-icons
+               {
+                    width: 75%;
+                    margin: auto;
+
+                    .icon
+                    {
+                         height: 35px;
+                         width: 35px;
+
+                         font-size: 1.35em;
+
+                         margin: 15px;
+                         padding-top: 0px;
+                         padding-left: 5px;
+                    }
+               }
+          }
+          .btn-custom
+          {
+               font-size: 20px !important;
+               margin-left: -20px !important;
+          }
+     }
+
+     .explanation
+     {
+          .top-background
+          {
+               height: 500px;
+          }
+     }
+
+     .footer
+     {
+          .top-background
+          {
+               top: 1700px;
+               height: 1100px;
           }
      }
 }

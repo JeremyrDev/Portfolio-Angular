@@ -16,11 +16,27 @@ export class ContactComponent {
      alreadySent: boolean = false;
      sendAnyway: boolean = false;
 
+     ipMain: string = "";
+
      name: string = "";
      email: string = "";
      message: string = "";
 
      responseText: string = "";
+
+     ngOnInit() {
+
+          this.data.getIP().subscribe((response) => {
+
+               // console.log("IP: " + JSON.stringify(response['ip']));
+               let ip = JSON.stringify(response['ip']).replace(/\"/g, '');
+               this.ipMain = ip;
+               // this.data.newVisitor(ip).subscribe((response) => {
+               //      //Save the value of "visited" to the current date and time. 
+               // });
+          });
+
+     }
 
      submit(n, e, m)
      {
@@ -78,7 +94,7 @@ export class ContactComponent {
                (document.querySelector('.response-text') as HTMLElement).style.opacity = '1';
 
                //submit contact info to database
-               this.data.submitContact(safeName, safeEmail, safeMessage).subscribe((response) => {
+               this.data.submitContact(safeName, safeEmail, safeMessage, this.ipMain).subscribe((response) => {
                     console.log("Contacted! : " + JSON.stringify(response));
 
                     (document.querySelector('.btn-custom') as HTMLElement).innerHTML = "Send Message!";

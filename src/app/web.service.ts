@@ -8,8 +8,9 @@ export class WebService {
      readonly ROOT_URL;
 
      constructor(private http: HttpClient) {
-          // this.ROOT_URL = 'http://localhost:3002';
-          this.ROOT_URL = 'https://jeremyrdev.xyz';
+          this.ROOT_URL = 'http://localhost:3002';
+          // this.ROOT_URL = 'https://api.jeremyr.dev';
+          // this.ROOT_URL = 'https://jeremyrdev.xyz';
      }
 
      get(uri: string) {
@@ -26,5 +27,10 @@ export class WebService {
 
      delete(uri: string) {
           return this.http.delete(`${this.ROOT_URL}/${uri}`);
+     }
+
+     custom(uri: string)
+     {
+          return this.http.get(`${uri}`);
      }
 }

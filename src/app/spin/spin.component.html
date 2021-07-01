@@ -1,0 +1,105 @@
+<div class="container-custom" id="top">
+     <div class="header">
+          <nav class="navbar navbar-expand-lg navbar-light">
+               <a class="navbar-brand" href="">
+                    <h1 class="logo">JR</h1>
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto"></ul>
+
+                    <form class="form-inline my-2 my-lg-0">
+                         <ul class="navbar-nav mr-auto">
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#skills">Skills<span class="sr-only">(current)</span></a>
+                              </li>
+
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#work">Work</a>
+                              </li>
+
+                              <!-- <li class="nav-item">
+                                   <a class="nav-link" href="#projects">Projects</a>
+                              </li> -->
+
+                              <li class="nav-item">
+                                   <a class="nav-link" routerLink="contact">Contact</a>
+                              </li>
+
+                              <li class="nav-item">
+                                   <a class="nav-link loop" href="#start-a-project">Start a Project</a>
+                              </li>
+                         </ul>
+                    </form>
+
+               </div>
+          </nav>
+
+          <div class="container" style="margin-left: 15px;">
+               <div class="row">
+                    <h1>Spintax Generator</h1>
+               </div>
+               <div class="form-group row">
+                    <label for="exampleFormControlTextarea1">Enter your spinnable text (Automatically copies to your clipboard once generated):</label>
+                    <textarea #textToSpin class="form-control" id="exampleFormControlTextarea1" rows="6" (keydown)="spinText($event, textToSpin.value)">{{processedText}}</textarea>
+               </div>
+               <div class="row">
+                    <button class="btn btn-primary btn-lg" (click)="generate(textToSpin.value)">Generate</button>
+                    <div class="combinations-text" style="margin-left: 15px;">Possible Combinations:  <span [innerHtml]="possibleCombinationsText">0</span></div>
+               </div>
+               <div class="response-text" [innerHtml]="spinResponseText"></div>
+               <div class="generated-text" [innerHtml]="generatedText"></div>
+          </div>
+
+
+
+          <div class="container" style="margin-left: 15px;">
+                         <div class="row">
+                              <h1>Senitment Ranker</h1>
+                         </div>
+                         <div class="form-group row">
+                              <label for="exampleFormControlTextarea1">Enter your spinnable text (Automatically copies to your clipboard
+                                   once generated):</label>
+                              <textarea #sentimentJSON class="form-control" id="exampleFormControlTextarea1" rows="6"
+                                   (keydown)="getSentiment($event, sentimentJSON.value)">{{processedJSON}}</textarea>
+                         </div>
+                         <div class="row">
+                              <!-- <button class="btn btn-primary btn-lg" (click)="generate(textToSpin.value)">Generate</button> -->
+          <!-- <div class="combinations-text" style="margin-left: 15px;">Possible Combinations: <span
+                                        [innerHtml]="possibleCombinationsText">0</span></div> -->
+          </div>
+          <!-- <div class="response-text" [innerHtml]="spinResponseText"></div> -->
+          <!-- <div>Good: {{sentimentCounter}}</div> -->
+          <div class="generated-text" [innerHtml]="sentimentOutput"></div>
+                         <!-- <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
+                              >{{sentimentOutput}}</textarea>
+                         <br><br>
+                         {{sentimentOutput}} -->
+          </div>
+
+          <!-- <div class="container" style="margin-left: 15px;">
+               <div class="row">
+                    <h1>JSON Editor</h1>
+               </div>
+               <div class="form-group row">
+                    <label for="exampleFormControlTextarea1">Enter your spinnable text (Automatically copies to your clipboard
+                         once generated):</label>
+                    <textarea #textToJSON class="form-control" id="exampleFormControlTextarea1" rows="6"
+                         (keydown)="getJSON($event, textToJSON.value)">{{JSONText}}</textarea>
+               </div>
+               <div class="row">
+                    <!-- <button class="btn btn-primary btn-lg" (click)="generate(textToSpin.value)">Generate</button> -->
+                    <!-- <div class="combinations-text" style="margin-left: 15px;">Possible Combinations: <span
+                              [innerHtml]="possibleCombinationsText">0</span></div> -->
+               <!-- </div> -->
+               <!-- <div class="response-text" [innerHtml]="spinResponseText"></div> -->
+               <!-- <div class="generated-text" [innerHtml]="outputJSON"></div>
+               <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
+                    >{{outputJSON}}</textarea>
+          </div> -->
+     </div>
+</div>

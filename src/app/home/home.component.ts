@@ -2,6 +2,8 @@ import { Component, OnInit, HostListener, ViewEncapsulation } from '@angular/cor
 import { DataService } from '../data.service';
 
 import * as $ from 'jquery';
+import { JsonPipe } from '@angular/common';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
      selector: 'app-home',
@@ -14,14 +16,16 @@ export class HomeComponent implements OnInit {
 
      headerContentFade : boolean = false;
 
-     constructor(private data: DataService) { }
+     constructor(private data: DataService, private router: Router) { }
 
      star : Number[] = [0, 0, 0, 0, 0];
      ratedValue : Number[] = [0, 0, 0, 0, 0];
 
      plainRating: Number = 0;
+     
+     ipMain: string = "";
 
-     rated : boolean = false;
+     rated : boolean = false;                     
 
      rateResponseText: string = "";
 
@@ -29,7 +33,7 @@ export class HomeComponent implements OnInit {
      {
           if(window.localStorage.getItem("rating"))
           {
-               console.log("Saved Rating: "+window.localStorage.getItem("rating"));
+               // console.log("Saved Rating: "+window.localStorage.getItem("rating"));
                this.plainRating = Number(window.localStorage.getItem("rating"));
                this.rate(Number(window.localStorage.getItem("rating")) - 1, true);
           }
@@ -41,6 +45,24 @@ export class HomeComponent implements OnInit {
           //           html: true
           //      })
           // })
+
+
+
+
+          //Check if the visited item in local storage exists, then check the time since the last visited time
+          //If time is longer than 5 minutes then update again
+          this.data.getIP().subscribe((response) => {
+
+               // console.log("IP: " + JSON.stringify(response));
+               let ip = JSON.stringify(response['ip']).replace(/\"/g, '');
+               this.ipMain = ip;
+
+               this.data.newVisitor(ip).subscribe((response) => {
+                    //Save the value of "visited" to the current date and time. 
+               });
+               
+          });
+          
      }
 
      ngOnDestroy() {
@@ -125,15 +147,46 @@ export class HomeComponent implements OnInit {
           this.plainRating = index + 1;
 
           //save rating to mongodb
-          this.data.submitRating(index + 1, "").subscribe((response) => {
-               console.log("Rating Submitted: "+JSON.stringify(response));
+          // console.log("Submitting: "+(index+1) + "::"+this.ipMain);
+          this.data.submitRating(index + 1, this.ipMain).subscribe((response) => {
+                    // console.log("Rating Submitted: "+JSON.stringify(response));
 
-               this.rateResponseText += "<br> <span class='rating-average'> The average rating is " + response['average_rating'].toFixed(1) + "</span>";
+               // this.rateResponseText += "<br> <span class='rating-average'> The average rating is " + response['average_rating'].toFixed(1) + "</span>";
           });
      }
 
      leavePopover()
      {
-          // ($('#discord') as any).popover('hide');
+          
+     }
+
+     nav(page)
+     {
+          switch(page)
+          {
+               case 0:
+                    this.router.navigate(['/baseline']);
+                    window.location.reload();
+               break;
+          }
+     }
+
+     resume()
+     {
+          this.data.viewedResume(this.ipMain).subscribe((response) => {
+               //Save the value of "visited" to the current date and time. 
+          });
+          window.open('/assets/Michaels_Resume.pdf', '_blank');
+     }
+
+     goingToPage(page, url)
+     {
+          console.log("Going to page");
+          let info = this.ipMain + " :: " +page;
+          this.data.newVisitor(info).subscribe((response) => {
+               //Save the value of "visited" to the current date and time. 
+               if(url != '')
+                    window.open(url);
+          });
      }
 }

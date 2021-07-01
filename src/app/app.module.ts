@@ -10,6 +10,8 @@ import { ContactComponent } from './contact/contact.component';
 import { BaselineComponent } from './baseline/baseline.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SpinComponent } from './spin/spin.component';
+import { LeadsComponent } from './leads/leads.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppComponent,
     HomeComponent,
     ContactComponent,
-    BaselineComponent
+    BaselineComponent,
+    SpinComponent,
+    LeadsComponent
   ],
   imports: [
     BrowserModule,
