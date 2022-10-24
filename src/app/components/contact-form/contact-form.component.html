@@ -1,0 +1,28 @@
+<div class="content">
+     <h1 class="text-center">Thanks for taking the time to reach out.<br>How can I help you today?</h1>
+
+     <div class="contact col-xl-6 col-lg-6 col-md-8 col-sm-10 col-xs-12">
+          <div class="response-text text-center" [innerHtml]="responseText"></div>
+
+          <div class="form-row">
+               <div class="name-input form-group col-md-6">
+                    <label for="name-input">Name</label>
+                    <input type="text" class="form-control" id="name-input" placeholder="First Name"
+                         #nameInput>
+               </div>
+               <div class="email-input form-group col-md-6">
+                    <label for="email-input">Email</label>
+                    <input type="email" class="form-control" id="email-input" placeholder="Email" #emailInput>
+               </div>
+          </div>
+          <div class="message-input form-group">
+               <label for="message-input">Message</label>
+               <textarea class="form-control" id="message-input" rows="5"
+                    #messageInput>Hey there! I'm interested in working together. When are you best available to discuss?</textarea>
+          </div>
+          <div class="col">
+               <button (click)="submit(nameInput.value, emailInput.value, messageInput.value)"
+                    class="btn btn-custom">Send Message!</button>
+          </div>
+     </div>
+</div>

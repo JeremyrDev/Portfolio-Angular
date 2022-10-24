@@ -1,0 +1,12 @@
+<div class="item" (click)="data.ShowWorkModal(itemIndex)">
+    <a>
+        <img class="img-fluid" src="{{item.image}}" alt="">
+        
+        <div class="center-text">
+            <span class="name">{{item.name}}</span><br>
+            <span class="title">{{item.jobTitle}}</span><br>
+            <span class="xs">{{item.startDate + " - "+ item.endDate}}</span>
+        </div>
+    </a>
+    <div class="bg-gradient"></div>
+</div>

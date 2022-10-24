@@ -1,0 +1,233 @@
+@import '../../../styles.scss';
+
+.work
+{
+     display: block;
+     position: relative;
+     height: 1200px;
+
+     .top-background
+     {
+          position: absolute;
+          top: 0px;
+
+          background-color: $primaryColor;
+          transform: skewY(5deg);
+          height: 660px;
+          width: 120%;
+          margin-left: -40px;
+          z-index: -998;
+     }
+
+     .bottom-background
+     {
+          position: absolute;
+          top: 400px;
+
+          background-color: $primaryColor;
+          transform: skewY(-5deg);
+          height: 500px;
+          width: 120%;
+          margin-left: -40px;
+          z-index: -999;
+
+          -webkit-box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.16);
+          -moz-box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.16);
+          box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.16);
+     }
+
+     .work-content
+     {
+          width: 100%;
+          position: absolute;
+          top: 140px;
+          
+          .title
+          {
+               font-family: Eurostile;
+               font-size: 2.8em;
+               font-weight: 800;
+               color: white;
+          }
+
+          .sub-text
+          {
+               font-family: europa, sans-serif;
+               font-style: normal;
+               font-weight: 300;
+               font-size: 1.6em;
+               color: white;
+               margin: auto;
+               max-width: 65%;
+          }
+
+          .item-container
+          {
+               width: 85%;
+               max-width: 980px;
+               margin: auto;
+               margin-top: 45px;
+
+               display: grid;
+               grid-gap: 10px;
+
+               $grayScale: 100%;
+               $brightness: 50%;
+
+               .tools
+               {
+                    width: 100%;
+                    text-align: center;
+
+                    i
+                    {
+                         display: inline-block;
+                         margin-left: 12px;
+                         margin-right: 12px;
+                         color: #77c4ff !important;
+                         font-size: 1.8em;
+                    }
+
+               }
+          }
+     }
+}
+
+@media (max-width: 590px)
+{
+    .work
+    {
+        height: 2600px !important;
+
+        .top-background
+        {
+            height: 1900px !important;
+        }
+
+        .bottom-background
+        {
+            top: 1500px !important;
+            height: 600px !important;
+        }
+        .work-content
+        {
+            .item-container
+            {
+                grid-template-columns: 100%;
+            }
+        }
+    }
+}
+@media (min-width: 590px) and (max-width: 726px)
+{
+    .work
+    {
+        height: 3100px !important;
+
+        .top-background
+        {
+            height: 2300px !important;
+        }
+
+        .bottom-background
+        {
+            top: 2200px !important;
+            height: 600px !important;
+        }
+        .work-content
+        {
+            .item-container
+            {
+                grid-template-columns: 100%;
+            }
+        }
+    }
+}
+@media (min-width: 727px) and (max-width: 992px)
+{
+    .work
+    {
+        .work-content
+        {
+            .item-container
+            {
+                grid-template-columns: 50% 50%;
+            }
+        }
+    }
+}
+@media (max-width: 767px)
+{
+    .work
+    {
+        height: 2400px;
+
+        .top-background
+        {
+            height: 1300px;
+        }
+
+        .bottom-background
+        {
+            top: 1150px;
+            height: 450px;
+        }
+
+        .work-content
+        {
+            top: 260px;
+
+            .item-container
+            {
+                .item:hover
+                {
+                        transform: scale(1.00);
+                }
+                
+                hr.white
+                {
+                        background-color: $primaryColor !important;
+                        border: none;
+                }
+
+                .tools
+                {
+                        i
+                        {
+                            font-size: 3em;
+                        }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px)
+{
+    .work
+    {
+        height: 1500px;
+        
+        .top-background
+        {
+            height: 1000px;
+        }
+
+        .bottom-background
+        {
+            top: 800px;
+        }
+    }
+}
+@media (min-width: 992px)
+{
+    .work
+    {
+        .work-content
+        {
+            .item-container
+            {
+                grid-template-columns: 33% 33% 33%;
+            }
+        }
+    }
+}

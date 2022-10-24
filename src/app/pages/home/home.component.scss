@@ -1,0 +1,68 @@
+@import '../../../styles.scss';
+
+.main
+{
+     width: 80%;
+     margin: auto;
+}
+
+body::-webkit-scrollbar {
+     width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+     background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+     background: linear-gradient(to bottom, $primaryColor, #0073cc);
+}
+
+@media (max-width: 420px)
+{
+     .main
+     {
+          width: 88%;
+     }
+}
+
+$sigColor: $primaryColor;
+$lightColor: rgb(202, 202, 202);
+.loop
+{
+     -webkit-animation: color-change 2s infinite;
+     -moz-animation: color-change 2s infinite;
+     -o-animation: color-change 2s infinite;
+     -ms-animation: color-change 2s infinite;
+     animation: color-change 2s infinite;
+}
+@-webkit-keyframes color-change {
+     0% { color: $lightColor; }
+     50% { color: $sigColor; }
+     100% { color: $lightColor; }
+}
+@-moz-keyframes color-change {
+     0% { color: $lightColor; }
+     50% { color: $sigColor; }
+     100% { color: $lightColor; }
+}
+@-ms-keyframes color-change {
+     0% { color: $lightColor; }
+     50% { color: $sigColor; }
+     100% { color: $lightColor; }
+}
+@-o-keyframes color-change {
+     0% { color: $lightColor; }
+     50% { color: $sigColor; }
+     100% { color: $lightColor; }
+}
+@keyframes color-change {
+     0% { color: $lightColor; }
+     50% { color: $sigColor; }
+     100% { color: $lightColor; }
+}
+
+
+.modal-lg-xl {
+    max-width: 90% !important;
+}

@@ -1,0 +1,37 @@
+<div class="header">
+    <div class="content">
+        <h1 id="header-1" class="text-center fade">Hi, I'm Jeremy, <br> A Full-Stack Engineer</h1>
+        <h5 id="header-2" class="text-center fade">Anguar 2+ / React / Unity3D / Swift / JavaScript / Nodejs </h5>
+
+        <div id="header-3" class="header-image fade">
+            <img id="avatar" class="profile-image" (mouseenter)="SwapImage(true)" (mouseleave)="SwapImage(false)" src='{{ "assets/" + avatar + ".png" }}' alt="">
+        </div>
+
+        <div class="social-icons row">
+            <div id="header-6" class="icon fade">
+                <a (click)="goingToPage('linkedin', 'https://www.linkedin.com/in/michael-jeremy-ryan')">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div id="header-5" class="icon fade">
+                <a (click)="goingToPage('twitter', 'https://twitter.com/@JeremyrDev')">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+            <div id="header-4" class="icon fade">
+                <a (click)="goingToPage('instagram', 'https://instagram.com/jeremyrdev')">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div id="header-7" class="icon fade">
+                <a (click)="goingToPage('email', 'mailto:Jeremyr.dev@gmail.com')">
+                    <i class="far fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+        <div id="header-8" class="col text-center fade">
+            <a (click)="resume()" class="btn btn-custom" style="cursor: pointer;">View Resume</a>
+        </div>
+    </div>
+</div>

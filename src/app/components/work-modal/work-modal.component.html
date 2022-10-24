@@ -1,0 +1,62 @@
+<div class="container-box" id="modal-container">
+    <div class="top-background" (click)="data.CloseWorkModal()"></div>
+    <div class="bottom-background" (click)="data.CloseWorkModal()"></div>
+    
+    <div id="work-modal" class="work-modal row pb-4">
+        <ul class="nav nav-tabs row" style="margin: 0px; padding: 0px;">
+            <li class="nav-item text-right">
+                <a class="nav-link close text-center" (click)="data.CloseWorkModal()"><i class="fas fa-times"></i></a>
+            </li>
+        </ul>
+
+        <div class="fill container p-1">
+            <div class="content-holder">
+                <div class="title">
+                    <a class="text-center" href="{{ data.workItems[data.selectedWorkItem].link }}">
+                        {{ data.workItems[data.selectedWorkItem].name }}
+                    </a>
+                </div>
+                <div class="col-12 subtitle">
+                    {{data.workItems[data.selectedWorkItem].jobTitle}}
+                </div>
+                <div class="col-12 duration">
+                    {{data.workItems[data.selectedWorkItem].startDate + " - " +
+                    data.workItems[data.selectedWorkItem].endDate}}
+                </div>
+            </div>
+        </div>
+
+        <div class="fill container p-1">
+            <div class="content-holder">
+                <div class="title">Primary Focus</div> 
+                <div class="content" [innerHTML]="data.workItems[data.selectedWorkItem].primaryFocus"></div>
+            </div>
+        </div>
+
+        <div class="fill container p-1">
+            <div class="content-holder">
+                <div class="title">Main Accomplishments</div>
+                <div class="content" [innerHTML]="data.workItems[data.selectedWorkItem].mainAccomplishments"></div>
+            </div>
+        </div>
+
+        <div class="fill container p-1">
+            <div class="content-holder row" style="justify-content: center;">
+                <div class="title col-12">Detailed Role Description</div>
+                <div class="col-12 row" style="justify-content: center;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="content description text-{{data.workItems[data.selectedWorkItem].description.alignment}}" [innerHTML]="getHTMLDescription()"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fill container p-1" *ngIf="data.workItems[data.selectedWorkItem].descriptionImages.length > 0">
+            <div class="content-holder">
+                <div class="title">Supporting Images</div>
+                <div class="content row p-4">
+                    <img class="p-3 {{image.size}}" src="{{image.link}}" width="100%" height="auto"
+                        *ngFor="let image of data.workItems[data.selectedWorkItem].descriptionImages; let i = index;" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

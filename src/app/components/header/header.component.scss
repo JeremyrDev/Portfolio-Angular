@@ -1,0 +1,162 @@
+@import '../../../styles.scss';
+
+.header
+{
+      position: relative;
+      margin-bottom: 100px;
+
+      .fade
+      {
+            opacity: 0;
+            transition: opacity 1.5s ease-out;
+      }
+
+      .content
+      {
+            opacity: 1;
+            transition: opacity .2s ease-in-out;
+
+            h1
+            {
+                  margin-top: 110px;
+                  font-family: Eurostile;
+                  font-weight: bold;
+                  font-size: 2.8em;
+            }
+
+            h5
+            {
+                  font-family: Eurostile;
+                  font-size: 1.4em;
+            }
+
+            .header-image
+            {
+                  margin: auto;
+                  margin-top: 35px;
+
+                  img
+                  {
+                        width: 200px;
+                        height: 200px;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                  }
+
+                  .profile-image
+                  {
+                        border-radius: 50%;
+                        opacity: 1;
+                        transition: opacity .15s ease-in-out;
+                  }
+            }
+
+            .social-icons
+            {
+                  width: 460px;
+                  margin: auto;
+                  justify-content: center;
+                  flex-wrap: nowrap;
+
+                  .icon
+                  {
+                        height: 60px;
+                        width: 60px;
+
+                        text-align: center;
+                        margin: 23px;
+                        padding-top: 1px;
+
+                        display: inline-block;
+                        
+                        cursor: pointer;
+
+                        transition: all .2s ease-in-out;
+
+                        text-decoration: none;
+                              color: $primaryColor;
+                              font-size: 2.2em;
+                              border: 2px solid $primaryColor;
+                              border-radius: 50%;
+
+                        a
+                        {
+                              color: $primaryColor;
+                        }
+                  }
+
+                  .icon:hover
+                  {
+                        background-color: $primaryColor;
+                        
+                        a
+                        {
+                              color: white;
+                        }
+                  }
+            }
+
+      }
+
+      .fade
+      {
+            opacity: 0;
+      }
+}
+
+@media (max-width: 320px)
+{
+      .header
+      {
+            .content
+            {
+                  .social-icons
+                  {
+                        width: 100%;
+                        padding-top: 10px;
+                  }
+
+                  .btn-custom
+                  {
+                        margin-top: 15px;
+                  }
+            }
+      }
+}
+
+@media (max-width: 590px)
+{
+      .header
+     {
+          .content
+          {
+               h1
+               {
+                    margin-top: 50px;
+               }
+               
+               .social-icons
+               {
+                    width: 100%;
+                    margin: auto;
+
+                    .icon
+                    {
+                         height: 35px;
+                         width: 35px;
+
+                         font-size: 1.35em;
+
+                         margin: 10px;
+                         padding-top: 0px;
+                    }
+               }
+
+               .btn-custom
+               {
+                    font-size: 20px;
+               }
+          }
+     }
+}

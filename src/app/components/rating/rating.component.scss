@@ -1,0 +1,131 @@
+@import '../../../styles.scss';
+
+.rate
+{
+     height: 500px;
+     margin-bottom: 340px;
+     z-index: 1000 !important;
+
+     .rate-content
+     {
+          width: 100%;
+          
+          .title
+          {
+               font-family: Eurostile;
+               font-size: 2.2em;
+               font-weight: 800;
+               color: #484848;
+          }
+
+          .sub-text
+          {
+               font-family: europa, sans-serif;
+               font-style: normal;
+               font-weight: 300;
+               font-size: 1.1em;
+               color: #484848;
+               margin: auto;
+               max-width: 65%;
+               margin-top: -5px;
+          }
+
+          .stars-container
+          {
+               width: 80%;
+               margin: auto;
+               margin-bottom: 220px;
+               text-align: center;
+               margin-top: 0px;
+               transition: margin-top .4s ease-in-out;
+
+               .star
+               {
+                    display: inline-block;
+                    font-size: 2.4em;
+                    color: $primaryColor;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 10px;
+               }
+          }
+
+          .isHovering
+          {
+               transform: scale(1);
+               transition: all .2s ease-in-out;
+          }
+
+          .isHovering:hover
+          {
+               transform: scale(1.2);
+          }
+
+          .picked
+          {
+               -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+               -moz-animation: fadein .5s; /* Firefox < 16 */
+               -ms-animation: fadein .5s; /* Internet Explorer */
+               -o-animation: fadein .5s; /* Opera < 12.1 */
+               animation: fadein .5s;
+          }
+
+          .rating-value
+          {
+               font-family: Europa;
+               font-size: 1.65em;
+          }
+
+          .rating-average
+          {
+               font-family: Europa;
+               font-size: 1em;
+               margin-top: 20px;
+               font-weight: 300;
+               color: green;
+          }
+
+          @keyframes fadein {
+               from { transform: scale(1.2); }
+               to   { transform: scale(1.4); }
+          }
+
+          /* Firefox < 16 */
+          @-moz-keyframes fadein {
+               from { transform: scale(1.2); }
+               to   { transform: scale(1.4); }
+          }
+
+          /* Safari, Chrome and Opera > 12.1 */
+          @-webkit-keyframes fadein {
+               from { transform: scale(1.2); }
+               to   { transform: scale(1.4); }
+          }
+
+          /* Internet Explorer */
+          @-ms-keyframes fadein {
+               from { transform: scale(1.2); }
+               to   { transform: scale(1.4); }
+          }
+
+          /* Opera < 12.1 */
+          @-o-keyframes fadein {
+               from { transform: scale(1.2); }
+               to   { transform: scale(1.4); }
+          }
+     }
+}
+
+@media (max-width: 420px)
+{
+    .rate
+    {
+        .rate-content
+        {
+            .stars-container
+            {
+                width: 95%;
+            }
+        }
+    }
+}

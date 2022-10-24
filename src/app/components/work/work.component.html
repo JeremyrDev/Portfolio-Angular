@@ -1,0 +1,16 @@
+<div class="work" id="work">
+    <div class="top-background"></div>
+    <div class="bottom-background"></div>
+    <div class="work-content">
+        <h1 class="text-center title">Work Experience</h1>
+        <h5 class="text-center sub-text">
+            Here are the companies I've worked for or founded. <br>
+            Some work was done under contract and cannot be shown.
+        </h5>
+
+        <div class="item-container row">
+            <app-work-item *ngFor="let i of data.workItems;" [itemIndex]="i.id"></app-work-item>
+        </div>
+    </div>
+</div>
+<app-work-modal *ngIf="data.showWorkModal"></app-work-modal>

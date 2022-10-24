@@ -1,0 +1,289 @@
+@import '../../../styles.scss';
+
+.skills
+{
+    width: 100%;
+    display: block;
+    position: relative;
+    height: 1600px;
+
+    .fade 
+    {
+        opacity: 0;
+        transition: opacity 1s ease-out;
+    }
+
+    .top-background
+    {
+        position: absolute;
+        top: -1500px;
+
+        background-color: $primaryColor !important;
+        transform: skewY(-5deg);
+        height: 450px;
+        width: 120%;
+        margin-left: -40px;
+        z-index: -998;
+        will-change: transform;
+        transition: all .8s ease;
+    }
+
+    .bottom-background
+    {
+        position: absolute;
+        top: -1200px;
+
+        background-color: $primaryColor !important;
+        transform: skewY(5deg);
+        height: 580px;
+        width: 120%;
+        margin-left: -40px;
+        z-index: -999;
+
+        -webkit-box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.16);
+        -moz-box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.16);
+        box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.16);
+        will-change: transform;
+        transition: all 2s ease;
+    }
+
+    .skills-content
+    {
+        width: 95%;
+        margin-left: 3%;
+        position: absolute;
+        top: 140px;
+
+        .title
+        {
+            font-family: Eurostile;
+            font-size: 2em;
+            font-weight: 800;
+            color: white;
+        }
+
+        .sub-text
+        {
+            font-family: europa, sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1.6em;
+            color: white;
+            margin: auto;
+            max-width: 740px;
+            height: 317px;
+        }
+    }
+
+    .skills-table
+    {
+        width: 100%;
+        position: relative;
+        top: 550px;
+        color: $textColor;
+
+        .table
+        {
+            background-color: $backgroundColor;
+            border: 1px solid lighten($backgroundColor, 5%);
+            border-radius: 15px;
+            max-width: 1345px;
+            width: 78%;
+            margin: auto;
+
+            .column-1
+            {
+                display: block;
+                padding-bottom: 30px;
+            }
+
+            .column-2
+            {
+                display: block;
+                border-left: 1px solid lighten($backgroundColor, 5%);
+                border-right: 1px solid lighten($backgroundColor, 5%);
+                padding-bottom: 30px;
+            }
+
+            .column-3
+            {
+                display: block;
+                padding-bottom: 30px;
+            }
+
+            .icon
+            {
+                height: 65px;
+                width: 70px;
+                margin: auto;
+                margin-top: 65px;
+                display: block;
+            }
+
+            .title
+            {
+                font-family: Eurostile;
+                font-size: 1.8em;
+                font-weight: bold;
+                color: white;
+                max-width: 100%;
+                margin: auto;
+                margin-top: 25px;
+            }
+
+            .sub-title
+            {
+                font-family: europa, sans-serif;
+                font-weight: 300;
+                font-size: 1.15em;
+                color: $primaryColor;
+                width: 75%;
+                margin: auto;
+                margin-top: 30px;
+            }
+
+            .text
+            {
+                font-family: europa, sans-serif;
+                font-weight: 300;
+                font-size: 1.1em;
+                color:  $textColor;
+                width: 75%;
+                margin: auto;
+                margin-top: 12px;
+                word-wrap: break-word;
+            }
+        }
+    }
+}
+
+@media (max-width: 341px) {
+    .skills-container {
+        height: 5600px !important;
+    }
+
+    .skills {
+        .bottom-background 
+        {
+            height: 1250px;
+        }
+        .skills-table {
+            top: 1250px;
+        }
+    }
+}
+
+@media (min-width: 342px) and (max-width: 430px)
+{
+    .skills-container
+    {
+        height: 4750px !important;
+    }
+
+    .skills
+    {
+        .top-background 
+        {
+            height: 650px;
+        }
+        .bottom-background 
+        {
+            height: 950px;
+        }
+        .skills-table
+        {
+            top: 1000px;
+        }
+    }
+}
+@media (min-width: 431px) and (max-width: 589px)
+{
+    .skills-container
+    {
+        height: 4150px;
+    }
+    .skills
+    {
+        height: 3900px;
+
+        .bottom-background
+        {
+            height: 700px;
+        }
+
+        .skills-content
+        {
+            top: 120px;
+        }
+
+        .skills-table
+        {
+            top: 835px;
+        }
+    }
+}
+@media (min-width: 590px) and (max-width: 991px)
+{
+    .skills-container {
+        height: 3500px;
+    }
+    .skills 
+    {
+        .skills-table 
+        {
+            top: 650px;
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1180px)
+{
+    .skills
+    {
+        height: 2200px;
+
+        .skills-table
+        {
+            .table
+            {
+                .column-2
+                {
+                    border-top: 1px solid #C9C9C9;
+                    border-bottom: 1px solid #C9C9C9;
+                    border-left: 0px;
+                    border-right: 0px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1180px)
+{
+    .skills-container {
+        height: 1800px;
+    }
+    .skills
+    {
+        height: 1850px;
+
+        .top-background {
+                height: 650px;
+            }
+        
+            .bottom-background {
+                height: 950px;
+            }
+    }
+}
+
+@media (min-width: 3479px) {
+    .skills {
+        .top-background {
+            top: -100px;
+            height: 650px;
+        }
+
+        .bottom-background {
+            height: 950px;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@import '../../../styles.scss';
+
+.content
+{
+     margin-top: 100px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+     .contact 
+     {
+          margin-top: 50px;
+          margin-bottom: 140px;
+          height: 630px;
+          // width: 80%;
+          // margin-left: 10%;
+          transition: margin-top .2s ease-in-out;
+
+          label 
+          {
+               font-family: Europa;
+               font-weight: 300;
+               font-size: 1.3em;
+               color: #7c7c7c;
+          }
+
+          input 
+          {
+               border-radius: 8px;
+               height: 55px;
+          }
+
+          .response-text 
+          {
+               margin-top: 25px;
+               margin-bottom: 25px;
+               font-family: Europa;
+               opacity: 0;
+               transition: opacity .2s ease-in-out;
+          }
+     }
+}
+
+@media (max-width: 591px) 
+{
+     .content
+     {
+          .contact 
+          {
+               margin-bottom: 500px;
+          }
+     }
+}

@@ -1,0 +1,61 @@
+@import '../../../styles.scss';
+
+nav 
+{
+    .fade 
+    {
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+    
+    .logo
+    {
+        font-family: Eurostile;
+        font-size: 40px;
+        font-weight: bold;
+        height: 54px;
+        width: auto;
+    }
+
+    .nav-link
+    {
+        color: $textColor;
+        margin-right: 35px;
+    }
+    .nav-link:hover
+    {
+        color: $primaryColor;
+    }
+
+    .navbar-toggler
+    {
+        color: white !important;
+    }
+    
+}
+.navbar-light .navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.068) !important;
+}
+@media (max-width: 767px)
+{
+    nav
+    {
+        .navbar-nav    
+        {
+            width: 100%;
+            
+            .nav-item
+            {
+                margin: auto;
+                text-align: center;
+                font-weight: 500;
+                font-size: 1.6em;
+
+                a:hover
+                {
+                    color: $primaryColor !important;
+                }
+            }
+        }
+    }
+}

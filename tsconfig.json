@@ -17,7 +17,11 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "types": ["jquery"]
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

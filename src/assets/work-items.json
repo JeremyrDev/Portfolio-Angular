@@ -1,0 +1,217 @@
+{
+    "items": [
+        {
+            "id":"0",
+            "name":"Cool Cats NFT",
+            "link":"https://coolcatsnft.com",
+            "image":"assets/work/coolcats.png",
+            "jobTitle":"Unity Game Developer",
+            "description": {
+                "size":"100%",
+                "alignment":"center",
+                "content":"I’ve been brought on very early on as a software engineer to assist in the creation of the main Cooltopia game experience for Cool Cats. I've helped to strategize and road-map features, design and implement small and large scale aspects of the game, and thoroughly test each implementation and subset of functionality every step of the way. Game content and features are all unreleased and still under contract, so any gameplay or screenshots cannot be shared.<br><br>We have a community of over 200K people on Twitter and an extremely active discord server. This makes launching a game of this magnitude, especially in this space, a very delicate process and preparation at every step is absolutely pivotal to the success of the project as a whole. It's been a blast so far and I cannot wait to see where it ends up!"
+            },
+            "descriptionImages": [
+                {
+                    "link":"assets/work/coolcats/banner.jpg",
+                    "size":"col-12"
+                },
+                {
+                    "link":"assets/work/coolcats/cool-pets.png",
+                    "size":"col-6"
+                },
+                {
+                    "link":"assets/work/coolcats/papercat.png",
+                    "size":"col-6"
+                },
+                {
+                    "link":"assets/work/coolcats/cool-cats-team.png",
+                    "size":"col-12"
+                }
+            ],
+            "startDate":"Jan 2022",
+            "endDate":"Present",
+            "mainAccomplishments":"Created minigames and helped in launching main game",
+            "primaryFocus":"Unity3D Game Development",
+            "techStacks":"Unity3D, C#, React, and Javascript",
+            "companyDescription":"Cool Cats are a collection of programmatically random-generated NFTs on the Ethereum blockchain. The 1st generation consists of 9,999 randomly assembled Cats from over 300,000 total options. Cool Cats have a variety of outfits, faces, and colors. Each Cool Cat consists of a unique body, hat, face, and outfit–the possibilities are virtually endless! All Cats are cool, but Cats with complete outfits are the coolest."
+        },
+        {
+            "id":"1",
+            "name":"TCG Royale",
+            "link":"https://tcgroyale.com",
+            "image":"assets/work/tcg.png",
+            "jobTitle":"Founding Engineer",
+            "description": {
+                "size":"100%",
+                "alignment":"center",
+                "content":"I was one of three founding members that launched this business from idea to MVP in less than 5 months. My primary role was handling overall operations, company finances, and building the customer facing front-end experience in Angular. <br> We had a cold launch which allowed our marketing efforts to be grown slowly, to allow for proper testing and scaling of our back-end. The primary focus was ensuring all systems could handle any large changes in customer activity. After the first month, all testing was overwhelmingly successful and we had also released a few iterative updates to the site on the fly. We scaled our marketing efforts and essentially overnight our business took off. We continued releasing updates to the front end and launched enhanced experiences which allowed our customers/community to love and trust our business. <br><br><iframe width='100%' height='500px' src='https://www.youtube.com/embed/LdjSvg9GOWM?controls=0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+            },
+            "descriptionImages":[
+                {
+                    "link":"assets/work/tcg/1.png",
+                    "size":"col-12"
+                },
+                {
+                    "link":"assets/work/tcg/2.png",
+                    "size":"col-12"
+                },
+                {
+                    "link":"assets/work/tcg/3.png",
+                    "size":"col-12"
+                },
+                {
+                    "link":"assets/work/tcg/4.png",
+                    "size":"col-12"
+                },
+                {
+                    "link":"assets/work/tcg/5.png",
+                    "size":"col-12"
+                }
+            ],
+            "startDate":"Aug 2021",
+            "endDate":"Jan 2022",
+            "mainAccomplishments":"Launched a 6-figure hyper-growth company in less than 5 months. ",
+            "primaryFocus":"Company Operations, Finances, and Angular front-end web app engineering",
+            "techStacks":"HTML5, CSS, SCSS, Angular 12, NodeJS, Firebase",
+            "companyDescription":"TCG Royale is a web experience for buying virtual mystery boxes for trading cards. You open the mystery box right then and there, see the cards you got, and if you love the card you got then you can withdraw it and we’ll send it right to your door. If you got cards you don’t like, then you can sell them back to us instantly and keep opening boxes. You also have the ability to build a virtual inventory of cards to collect and decide which you want to have a physical copy of"
+        },
+        {
+            "id":"2",
+            "name":"Groove Jones, LLC.",
+            "link":"https://groovejones.com",
+            "image":"assets/work/groovejones.png",
+            "jobTitle":"Full Stack Developer",
+            "description":
+            {
+                "size":"100%",
+                "alignment":"left",
+                "content":"I was brought on as a full-stack developer to work across multiple client projects involving web app/dashboard creation, backend API creation, and AR/VR experience engineering. <br>Here are some of the things I worked on:<ul><li>Refactored and finished an angular dashboard with PHP backend to connect to VR training and simulation experience</li><li>Created a Scorm 2.4 compliant course for custom LMS integration to tie data from the above experience into a scorable class that students could pass/fail</li><li>Built out a responsive frontend UI for an augmented reality web app for Toyota®</li><li>Assisted with dashboard development using ASP.Net Razor Pages with ABP </li><li>Worked in an existing Unity project to tie the above dashboard into the game with custom shader integration for Agora realtime live-streaming </li><li>Created an augmented reality experience using Zappar libraries with react and ThreeJS to enable image tracking and 3D model overlay within the real world, all on the web.</li><ul><br>During my time there, I worked on projects with many big name clients like Toyota®, IBM, Midea, Bi Worldwide, and Ideal Industries. <br><br>Here's some of the projects I was on:<br><li><a href='https://arvrjourney.com/rewards-adventure-an-online-virtual-game-experience-to-reward-employees-1e0c376c4a8f'>https://arvrjourney.com/rewards-adventure-an-online-virtual-game-experience-to-reward-employees-1e0c376c4a8f</a></li><li><a href='https://itzaferg.medium.com/midea-ride-the-wave-retail-ar-product-demo-experience-97fa1a4402ef'>https://itzaferg.medium.com/midea-ride-the-wave-retail-ar-product-demo-experience-97fa1a4402ef</a></li><li><a href='https://itzaferg.medium.com/toyota-uses-webar-face-game-to-promote-safety-and-awareness-3548379053d2'>https://itzaferg.medium.com/toyota-uses-webar-face-game-to-promote-safety-and-awareness-3548379053d2</a></li><li><a href='https://arvrjourney.com/vr-platform-to-train-students-for-electrical-trade-skills-c2bae38a6ed1'>https://arvrjourney.com/vr-platform-to-train-students-for-electrical-trade-skills-c2bae38a6ed1</a></li></ul><br><iframe width='100%' height='500px' src='https://www.youtube-nocookie.com/embed/BwDvpskwfwA?controls=0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>  <iframe width='100%' height='500px' src='https://www.youtube-nocookie.com/embed/Jsv48lcWmG4?controls=0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe> <iframe width='100%' height='500px' src='https://www.youtube-nocookie.com/embed/C5EiH1JWcP8?controls=0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+            },
+            "descriptionImages":[
+                {
+                    "link":"assets/work/groove/team.jpg",
+                    "size":"col-12"
+                }
+            ],
+            "startDate":"Nov 2020",
+            "endDate":"Aug 2021",
+            "mainAccomplishments":"Refactored and finished dashboard and API backend for award winning VR training and simulation experience with Ideal Industries.",
+            "primaryFocus":"Angular Dashboard/Web App, PHP backend API, AR/VR Experiences, React Augmented Reality Integration",
+            "techStacks":"HTML5, CSS, SCSS, Javascript, Angular 12, React, PHP 7, AR Tracking with TensorflowJS,  ASP.Net with Razor Pages in the ABP Framework, ThreeJS, and Unity3D",
+            "companyDescription":"Groove Jones is an agile company that produces next-generation experiences for world-class brands. They are best known for their award-winning work in AR (Augmented Reality), VR (Virtual Reality), ML (Machine Learning), WebGL, and AI (Artificial Intelligence) Application development for advertising and marketing, sales enablement, and enterprise training for both IRL (in real life) and for Metaverse worlds."
+        },
+        {
+            "id":"3",
+            "name":"JR Development",
+            "link":"https://jeremyr.dev",
+            "image":"assets/work/jrdevelopment.png",
+            "jobTitle":"Founding Engineer",
+            "description": {
+                "size":"100%",
+                "alignment":"center",
+                "content":"I was the sole engineer behind JR Development where I started making websites for clients, but it was common that they needed help with more than just getting a website. As a result, I started offering more to clients and it eventually lead to offering a whole experience to get your business off the ground exactly how you wanted. I utilized many tools and tech stacks to achieve the results clients were looking for. I launched this business at the peak of COVID-19 when everyone thought the world was ending. Thankfully it was still successful, but it wasn’t without effort."
+            },
+            "descriptionImages":[
+                {
+                    "link":"assets/work/jrdev/1.jpg",
+                    "size":"col-12"
+                },
+                {
+                    "link":"assets/work/jrdev/2.png",
+                    "size":"col-12"
+                },
+                {
+                    "link":"assets/work/jrdev/3.png",
+                    "size":"col-12"
+                }
+            ],
+            "startDate":"Jan 2020",
+            "endDate":"Feb 2021",
+            "mainAccomplishments":"Launched several successful e-commerce websites and managed multiple successful marketing campaigns.",
+            "primaryFocus":"E-Commerce website development, marketing and branding, and startup consulting ",
+            "techStacks":"Angular, NodeJS, MongoDB, Shopify, Wordpress, and Ecwid",
+            "companyDescription":"Specializes in building online shops, infographic websites, mobile apps, business branding, and marketing/advertising. Also helps connect the dots between business & startup needs, assisting in scaling and automation to help you expand; bringing your business to the next level."
+        },
+        {
+            "id":"4",
+            "name":"Gratifai",
+            "link":"https://gratifai.ai",
+            "image":"assets/work/gratifai.png",
+            "jobTitle":"Founding Engineer",
+            "description": {
+                "size":"100%",
+                "alignment":"center",
+                "content":"Gratifai was a platform offering large scale sentiment analysis of social media content. I was one of the founding engineers primarily in charge of creating the front end and react dashboard. Within the dashboard you could easily view key metrics about you or your companies social media stats of overall sentiment by the hour, for the day, week, month, or year. You could easily subscribe to other companies, people, or topics to generate metrics as widgets on your dashboard to help you see how everything is going in real-time. We also had dedicated tools and alerts for major upward or downward trends so you or your company could very quickly jump into action in the event that there was a major PR disaster or victory."
+            },
+            "descriptionImages":[
+                {
+                    "link":"assets/work/gratifai/1.png",
+                    "size":"col-12"
+                },
+                {
+                    "link":"assets/work/gratifai/2.png",
+                    "size":"col-12"
+                }
+            ],
+            "startDate":"March 2020",
+            "endDate":"Oct 2020",
+            "mainAccomplishments":"Landed within the top 4% of Y-Combinator applicants in 2020, only top 3% were admitted in for funding though.",
+            "primaryFocus":"Operations and Front-end development ",
+            "techStacks":"React, NodeJS",
+            "companyDescription":"Created an AI solution for tracking overall social media sentiment for major brands, influencers, or topics. Allowed for companies to study trends, their brands perception, competitors perception, and create actionable plans based on real metrics."
+        },
+        {
+            "id":"5",
+            "name":"Baseline Life, LLC.",
+            "link":"https://baseline.life",
+            "image":"assets/work/baseline.png",
+            "jobTitle":"Founding Engineer",
+            "description": {
+                "size":"100%",
+                "alignment":"left",
+                "content":"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When starting Baseline Life LLC, my purpose was to handle all things tech in relation to the company's goal, which was to provide a safe and effective solution of discrete monitoring of at-risk individuals to help in the immediate recovery of those that wander or go unresponsive when time counts most. I spent a lot of time around EMS throughout my life and upon seeing an opportunity to help with this, I dropped everything and got to work. At the beginning, I had no prior knowledge or experience with circuit design or architecting the systems needed to make any of this work, let alone what it would eventually turn into. <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It took me 10 months, and a lot of coffee, but after reverse engineering everything I could find and researching the early days of YouTube, I eventually was able to create a fully functional prototype that had 2G cellular connectivity, GPS, an accelerometer, and a temperature sensor. The first time it connected to a cell tower and locked onto my position was the biggest accomplishment of my life, and I’ll never forget that moment. At that time, the prototype was about the size of my palm, so not very discrete. I spent the next year creating multiple iterations and expanding the functionality further. Eventually landing on a 3G cellular prototype with GPS, Bluetooth, and an accelerometer less than the size of a quarter and was the smallest cellular device ever created.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At this point, we had a few people in the area hear about what we were doing and before I knew it we were in the University of Pittsburgh giving a lecture on what our service is, how the device works, and what problems we’re aiming to solve. I was facing things I never thought I would, but couldn’t be happier. Not long after, we gave a similar talk at Dicks Sporting Goods Corporate headquarters here in Pittsburgh with potential for them to carry our device on their store shelves once we released. More focused than ever, I kept developing and kept pushing until eventually we were asked to present at the Veteran’s Association’s main head quarters in Orlando to go over what their needs were and how we could help. We met with them, they loved what we were doing, and asked us to create a custom solution for the problems they were facing. This was life-fulfilling to me. With no questions asked, I got to work and developed exactly what they were looking for. A very discrete, LTE cellular enabled device with an eSIM for easy device management, a 3D IMU for positioning in 3D space, Bluetooth for realtime hyper accurate indoor positioning, and a host of biometric sensors for determining heart rate, HrV, spO2, temperature, and skin moisture levels. It had it all. With a battery life of about 12 hours while using cellular and over a week on BLE, along with a plethora of proprietary algorithms for generating new and unique metrics for that they needed. This was an achievement in my life that means the most to me and that I’ll hold forever.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unfortunately, while working on the contracts to work together and get purchase orders, COVID-19 came in full swing and halted our US manufacturing as well as any potential for offshore manufacturing. We had to put the project on hold and funding was pulled since COVID never really went away and the world is still recovering. In the mean time, I’ve found myself doing other fun and meaningful work with the intention of one day returning to where we left off."
+            },
+            "descriptionImages":[
+                {
+                    "link":"assets/work/baseline/1.jpg",
+                    "size":"col-12"
+                },
+                {
+                    "link":"assets/work/baseline/2.png",
+                    "size":"col-6"
+                },
+                {
+                    "link":"assets/work/baseline/3.png",
+                    "size":"col-6"
+                },
+                {
+                    "link":"assets/work/baseline/4.png",
+                    "size":"col-6"
+                },
+                {
+                    "link":"assets/work/baseline/5.png",
+                    "size":"col-6"
+                },
+                {
+                    "link":"assets/work/baseline/6.png",
+                    "size":"col-6"
+                },
+                {
+                    "link":"assets/work/baseline/7.jpg",
+                    "size":"col-6"
+                },
+                {
+                    "link":"assets/work/baseline/8.png",
+                    "size":"col-12"
+                }
+            ],
+            "startDate":"April 2015",
+            "endDate":"Feb 2021",
+            "mainAccomplishments":"In 2018 - 2019, I created the smallest cellular device in the world, operating on the latest LTE frequency bands, and landing us into the main headquarters of the VA working with the government on solutions for our veterans.",
+            "primaryFocus":"Founding Engineer, Full Stack web developer, Product and PCB Engineer",
+            "techStacks":"HTML, CSS, Javascript, PHP, NodeJS, C++ for embedded development",
+            "companyDescription":"Baseline Life, LLC provides an all encompassing and cost effective monitoring and recovery solution for at-risk individuals including specialized solutions for our military / veterans. Our service gives EMS an immediate ability to save more lives while being fully automated in the background of your day to day life."
+        }
+    ]
+}
